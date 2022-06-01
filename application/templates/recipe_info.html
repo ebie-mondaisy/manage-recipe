@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% block body %}
+
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+     <ul class="alert slert-info alert-dismissable">
+         {% for message in messages %}
+         <li>{{ message }}</li>
+         {% endfor %}
+     </ul>
+  {% endif %}
+{% endwith %}
+
+
+<div class="card info-card">
+    <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-details" role="tab" aria-controls="nav-details" aria-selected="true">Info</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-add" role="tab" aria-controls="nav-add" aria-selected="false">Add Recipe Note</a>
+            </li>
+        </ul>
+    
+    </div>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active pt-1" id="nav-details" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="card flex-row border-2" id= recipeNumber{{recipe.id}} style="width: 80%;">
+                <div class="card-block px-1">
+                    <form action="" enctype="multipart/form-data" id ="SubmitRecipe" method="POST">
+                        {{ form_update.hidden_tag() }}
+                        <fieldset class = "form-group">
+                            <div class="form-group">
+                                {{ form_update.recipeName }}
+                            </div>
+                            <div class="form-group">
+                                {{ form_update.creatorName}}
+                            </div>
+                            <div class="form-group">
+                                {{ form_update.cuisName}}
+                            </div>
+                            <div class="form-group">
+                                {{ form_update.description}}
+                            </div>
+                            <div class="form-group">
+                                {{ form_update.ingredients}}
+                            </div>
+                            <div class="form-group">
+                                {{ form_update.instructions}}
+                            </div>
+                            <div class="form-group">
+                                {{ form_update.calories}}
+                            </div>
+                            <div class="form-group">
+                                {{ form_update.difficulty}}
+                            </div>
+
+                            <div class="log-button-container">
+                                {{ form_update.update }}
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div> 
+        </div>
+        <div class="tab-pane fade" id="nav-add" role="tabpanel" aria-labelledby="nav-add-tab">
+            <div class="add-track-card card my-1" style="width: 50%;">
+                <form class="addtrack" action="" method="POST">
+                    {{ form_update.hidden_tag() }}
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item p-0">{{ form_notes.recipe_name(placeholder = "Recipe Name", class_="notes-input-area") }}</li>
+                        <li class="list-group-item p-0">{{ form_notes.made_date(placeholder = "Date Cooked", class_="notes-input-area") }}</li>
+                        <li class="list-group-item p-0">{{ form_notes.success(placeholder = "Success Rate", class_="notes-input-area") }}</li>
+                        <li class="list-group-item p-0">{{ form_notes.enjoy_rate(placeholder = "Enjoyment Rating", class_="notes-input-area") }}</li>
+                        <li class="list-group-item p-0">{{ form_notes.notes(placeholder = "Notes", class_="notes-text-area") }}</li>
+                        {{ form_notes.add_tracking }}
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="card-columns my-2 mx-2">
+    {% for track in recipe_notes %}
+    <div class="card note-card border-dark mr-1" id="noteNumber{{note.id}}">
+        <div class="card-header">{{ track.recipe_name }}</div>
+        <div class="card-body">
+            <p class="card-text">{{ track.notes }}</p>
+            <p class="card-text"><small class="test-muted">Date Created: {{ track.made_date }}</small></p>
+        </div>
+        <button class="button" track_id = "{{ track.id }}">Delete</button>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock body %}

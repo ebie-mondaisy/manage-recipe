@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block body %}
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+     <ul class="alert slert-info alert-dismissable">
+         {% for message in messages %}
+         <li>{{ message }}</li>
+         {% endfor %}
+     </ul>
+  {% endif %}
+{% endwith %}
+
+<div class="add-recipe-card card my-1 border-2px">
+    <form class="AddRecipe" action="" enctype="multipart/form-data" id="SubmitRecipe" method="post">
+        {{ form.hidden_tag() }}
+        <fieldset>
+
+            <div class="form-group">
+                {{ form.recipeName.label }} {{ form.recipeName }}
+            </div>
+            <div class="form-group">
+                {{ form.creatorName.label }} {{ form.creatorName }}
+            </div>
+            <div class="form-group">
+                {{ form.cuisName.label }} {{ form.cuisName }}
+            </div>
+            <div class="form-group">
+                {{ form.description.label }} {{ form.description }}
+            </div>
+            <div class="form-group">
+                {{ form.ingredients.label }} {{ form.ingredients }}
+            </div>
+            <div class="form-group">
+                {{ form.instructions.label }} {{ form.instructions }}
+            </div>
+            <div class="form-group">
+                {{ form.calories.label }} {{ form.calories }}
+            </div>
+            <div class="form-group">
+                {{ form.difficulty.label }} {{ form.difficulty }}
+            </div>
+            
+            {{ form.submit }}
+            </fieldset>
+
+    </form>
+</div>
+
+
+{% endblock body %}
