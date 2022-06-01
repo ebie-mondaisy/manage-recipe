@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+{% for cuisine in all_cuisines %}
+
+<div class="card recipe-card border-2 mt-2" id = cuisineNumber{{cuisine.id}} >
+    <div class="row align-items-start no-gutters">
+        <div class="col mx-auto">
+              <div class="card-block px-1 mb-2">
+                  <p class="card-text">{{ cuisine.cuisName }}</p>
+              </div>
+    </div>
+</div>
+
+{% endfor %}
+
+{% endblock body %}

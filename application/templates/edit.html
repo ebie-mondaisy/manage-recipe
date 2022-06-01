@@ -70,10 +70,10 @@
                 <form class="addtrack" action="" method="POST">
                     {{ form_update.hidden_tag() }}
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item p-0">{{ form_notes.recipe_name(placeholder = "Recipe Name", class_="notes-input-area") }}</li>
-                        <li class="list-group-item p-0">{{ form_notes.made_date(placeholder = "Date Cooked", class_="notes-input-area") }}</li>
+                        <li class="list-group-item p-0">{{ form_notes.recipeName(placeholder = "Recipe Name", class_="notes-input-area") }}</li>
+                        <li class="list-group-item p-0">{{ form_notes.madeDate(placeholder = "Date Cooked", class_="notes-input-area") }}</li>
                         <li class="list-group-item p-0">{{ form_notes.success(placeholder = "Success Rate", class_="notes-input-area") }}</li>
-                        <li class="list-group-item p-0">{{ form_notes.enjoy_rate(placeholder = "Enjoyment Rating", class_="notes-input-area") }}</li>
+                        <li class="list-group-item p-0">{{ form_notes.enjoyRate(placeholder = "Enjoyment Rating", class_="notes-input-area") }}</li>
                         <li class="list-group-item p-0">{{ form_notes.notes(placeholder = "Notes", class_="notes-text-area") }}</li>
                         {{ form_notes.add_tracking }}
                     </ul>
