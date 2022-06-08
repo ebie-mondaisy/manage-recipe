@@ -16,6 +16,9 @@
                     <p class="card-text">Calories: {{ recipe.calories }}</p>
                     <p class="card-text">Difficulty: {{ recipe.difficulty }}</p>
                 </div>
+                <form class = view-form action="{{ url_for('edit_recipe', id = recipe.id) }}" method="GET">
+                    <input class = "bt btn-info view-btn" type="submit" name="update" value="View">
+                </form>
                 <form action="/home/delete/{{recipe.id}}" method="POST">
                     <button class="button">Delete</button>
                 </form>

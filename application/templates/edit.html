@@ -86,15 +86,15 @@
 
 <div class="card-columns my-2 mx-2">
     {% for track in recipe_notes %}
-    <div class="card note-card border-dark mr-1" id="noteNumber{{note.id}}">
-        <div class="card-header">{{ track.recipe_name }}</div>
-        <div class="card-body">
-            <p class="card-text">{{ track.notes }}</p>
-            <p class="card-text"><small class="test-muted">Date Created: {{ track.made_date }}</small></p>
-        </div>
-        <button class="button" track_id = "{{ track.id }}">Delete</button>
-    </div>
+      <div class="card note-card border-dark mr-1" id= "trackNumber{{ track.id }}">
+          <div class="card-header">{{ track.recipe_name }}</div>
+          <div class="card-body">
+              <p class="card-text">{{ track.notes }}</p>
+              <p class="card-text"><small class="test-muted">{{ track.made_date }}</small></p>
+          </div>
+          <button class="track-delete-btn btn-dark deleteTrack" track_id = "{{ track.id }}">Delete</button>
+      </div>
     {% endfor %}
-</div>
+  </div>
 
 {% endblock body %}

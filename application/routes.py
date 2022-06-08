@@ -6,7 +6,7 @@ from application.forms import *
 from datetime import date, timedelta
 
 #creating routes for recipe management site
-# @app.route("/", methods = ['GET', 'POST'])
+@app.route("/", methods = ['GET', 'POST'])
 @app.route('/home', methods = ['GET', 'POST'])
 def home():
     recipes = makeRecipe.query.all()
@@ -90,7 +90,7 @@ def edit_recipe(id):
     form_update =  UpdateRecipe(obj = look_recipe)
     add_track = RecipeTrack()
 
-    form = RecipeTrack()
+    #form = RecipeTrack()
 
     if form_update.update.data and form_update.validate_on_submit():
         look_recipe.recipeName = form_update.recipeName.data
@@ -104,9 +104,8 @@ def edit_recipe(id):
         return redirect(url_for('edit_recipe', id = look_recipe.id))
 
     elif add_track.add_tracking.data and add_track.validate_on_submit():
-        track = trackCook(recipe_name = add_track.recipeName, made_date = add_track.madeDate.data,
-                            success = add_track.success.data, enjoy_rate = add_track.enjoyRate.data,
-                            notes = add_track.notes.data, id = id)
+        track = trackCook(recipe_name = add_track.recipeName.data, made_date = add_track.madeDate.data,
+                            success = add_track.success.data, enjoy_rate = add_track.enjoyRate.data, notes = add_track.notes.data, id = id)
         db.session.add(track)
         db.session.commit()
         return redirect(url_for('edit_recipe', id = look_recipe.id))
@@ -123,5 +122,4 @@ def delete_track():
     track_delete = trackCook.query.get_or_404(request.form['track_ID'])
     db.session.delete(track_delete)
     db.session.commit()
-    flash('You have deleted this recipe tracking.', 'success')
-    return redirect(url_for('home'))
+    return jsonify({"result" : "success"})
