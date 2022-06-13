@@ -21,7 +21,7 @@ class CreateRecipe(FlaskForm):
 
 class RecipeTrack(FlaskForm):
     recipeName = StringField('Recipe Name:', validators=[Length(min=1, max=80), DataRequired()])
-    madeDate = DateField('Date recipe was cooked:', format='%d-%m-%Y')
+    madeDate = DateField('Date recipe was cooked:', format='%Y-%m-%d')
     success = SelectField('Success of recipe:', choices=[("could have done better", "Could have done better".capitalize()), ("satisfactory", "Satisfactory".capitalize()), ("cooked to perfection", "Cooked to perfection".capitalize())])
     enjoyRate = IntegerField('Enjoyment rating:', validators=[NumberRange(min=1, max=10), InputRequired()])
     notes = TextAreaField('Recipe notes:', validators=None)

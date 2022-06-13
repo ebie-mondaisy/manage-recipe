@@ -9,12 +9,12 @@
           <div class="col mx-auto">
                 <div class="card-block px-1 mb-2">
                     <h4 class="card-header">{{ recipe.recipeName }}</h4>
-                    <p class="card-text">Foodie: {{ recipe.creatorName }}</p>
-                    <p class="card-text">Description: {{ recipe.description }}</p>
-                    <p class="card-text">Ingredients: {{ recipe.ingredients }}</p>
-                    <p class="card-text">Instructions: {{ recipe.instructions }}</p>
-                    <p class="card-text">Calories: {{ recipe.calories }}</p>
-                    <p class="card-text">Difficulty: {{ recipe.difficulty }}</p>
+                    <p class="card-text"><b>Foodie:</b> {{ recipe.creatorName }}</p>
+                    <p class="card-text"><b>Description:</b> {{ recipe.description }}</p>
+                    <p class="card-text"><b>Ingredients:</b> {{ recipe.ingredients }}</p>
+                    <p class="card-text"><b>Instructions:</b> {{ recipe.instructions }}</p>
+                    <p class="card-text"><b>Calories:</b> {{ recipe.calories }}</p>
+                    <p class="card-text"><b>Difficulty:</b> {{ recipe.difficulty }}</p>
                 </div>
                 <form class = view-form action="{{ url_for('edit_recipe', id = recipe.id) }}" method="GET">
                     <input class = "bt btn-info view-btn" type="submit" name="update" value="View">

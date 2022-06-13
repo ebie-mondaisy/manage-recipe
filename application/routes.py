@@ -48,7 +48,6 @@ def create_cuisine():
         db.session.add(cuisine)
         db.session.commit()
         flash('Cuisine added successfully :)', 'success')
-        #return redirect(url_for('cuisine_view'))
     return render_template("cuisine.html", title = "Add a Cuisine!", form = form)
 
 @app.route('/cuisine')
@@ -62,15 +61,6 @@ def delete(id):
     db.session.commit()
     flash('You have deleted this recipe.', 'success')
     return redirect(url_for('home'))
-
-# @app.route('/cuisine/delete')
-# def delete_cuisine():
-#     cuisine_delete = Cuisines.query.get(id)
-
-#     db.session.delete(cuisine_delete)
-#     db.session.commit()
-#     flash('You have deleted this cuisine.', 'success')
-#     return redirect(url_for('cuisine_view'))
 
 @app.route("/search", methods=["POST"])
 def search_recipe():
@@ -90,8 +80,6 @@ def edit_recipe(id):
     form_update =  UpdateRecipe(obj = look_recipe)
     add_track = RecipeTrack()
 
-    #form = RecipeTrack()
-
     if form_update.update.data and form_update.validate_on_submit():
         look_recipe.recipeName = form_update.recipeName.data
         look_recipe.creatorName = form_update.creatorName.data
@@ -101,21 +89,23 @@ def edit_recipe(id):
         look_recipe.calories = form_update.calories.data
         look_recipe.difficulty = form_update.difficulty.data
         db.session.commit()
+        flash('Recipe updated :)', 'success')
         return redirect(url_for('edit_recipe', id = look_recipe.id))
 
-    elif add_track.add_tracking.data and add_track.validate_on_submit():
-        track = trackCook(recipe_name = add_track.recipeName.data, made_date = add_track.madeDate.data,
-                            success = add_track.success.data, enjoy_rate = add_track.enjoyRate.data, notes = add_track.notes.data, id = id)
+    if add_track.add_tracking.data and add_track.validate_on_submit():
+        track = trackCook(madeDate = add_track.madeDate.data,
+                            success = add_track.success.data, enjoyRate = add_track.enjoyRate.data, notes = add_track.notes.data, recipe_id = id)
         db.session.add(track)
         db.session.commit()
+        flash('You have successfully added a note.', 'success')
         return redirect(url_for('edit_recipe', id = look_recipe.id))
 
-    elif request.method == "GET":
-        return render_template("edit.html", recipe = look_recipe, recipe_notes = look_notes,
-                                    form_update = form_update, form_notes = add_track)
+    if request.method == "GET":
+        return render_template("edit.html", title = "Edit Recipe!", recipe = look_recipe, recipe_notes = look_notes,
+                                    form_update = form_update, add_track = add_track)
 
-    return render_template("edit.html", recipe = look_recipe, recipe_notes = look_notes,
-                                    form_update = form_update, form_notes = add_track)
+    return render_template("edit.html", title = "Edit Recipe!", recipe = look_recipe, recipe_notes = look_notes,
+                                    form_update = form_update, add_track = add_track)
 
 @app.route("/home/edit/track", methods = ["POST"])
 def delete_track():
