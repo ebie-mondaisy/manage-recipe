@@ -92,7 +92,7 @@ def edit_recipe(id):
         flash('Recipe updated :)', 'success')
         return redirect(url_for('edit_recipe', id = look_recipe.id))
 
-    if add_track.add_tracking.data and add_track.validate_on_submit():
+    if add_track.add_tracking.data:
         track = trackCook(madeDate = add_track.madeDate.data,
                             success = add_track.success.data, enjoyRate = add_track.enjoyRate.data, notes = add_track.notes.data, recipe_id = id)
         db.session.add(track)
