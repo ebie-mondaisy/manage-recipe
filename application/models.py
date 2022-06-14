@@ -10,13 +10,13 @@ class Cuisines(db.Model):
 class makeRecipe(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     recipeName = db.Column(db.String(100), nullable=False)
-    CuisID = db.Column(db.String(30), db.ForeignKey("cuisines.id"), nullable=False)
     creatorName = db.Column(db.String(30), nullable=False)
     description = db.Column(db.String(500), nullable=False)
     ingredients = db.Column(db.String(500), nullable=False)
     instructions = db.Column(db.String(1500), nullable=False)
     calories = db.Column(db.Integer, nullable=False)
     difficulty = db.Column(db.String(30), nullable=False)
+    CuisID = db.Column(db.Integer, db.ForeignKey("cuisines.id"), nullable=False)
     recipe_notes = db.relationship("trackCook", backref="recipe", lazy=True)
     
 
