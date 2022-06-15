@@ -14,3 +14,4 @@ For this project, I have made sure that I am able to meet all requirments of the
 ## Database Design
 
 The initial vision for the database was to create a table of cuisines that can link to the recipes table and provide drop down options when creating a recipe. To add an extra function to the recipe library, I planned to create a table that stores notes for each recipe.
+![hand drawn erd](/image-source/erd1.jpg)
