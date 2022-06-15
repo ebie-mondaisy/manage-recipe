@@ -145,6 +145,7 @@ Thw following diagram shows the process needed to deliver the application that I
 ## Challenges and Known Issues
 
 **Known issues with the project**
+
 Throughout the project, I had face many functional issues and removed elements that I deemed unnecessary. I will outline some of the problems that the application currently has that could be prospects for future development.
 
 - The application allows users to create cuisines, however, they cannot be updated or deleted. This is due to a focus being put on other elements of the application along with wanting the cuisines to only be accessed by admins.
@@ -152,6 +153,7 @@ Throughout the project, I had face many functional issues and removed elements t
 - The search function within the application will display the result that is closely matched to what is typed in the search bar. For example, if the database contains cheese souffle and cheese toastie, the user would have to be specific with what they want to find.
 
 **Challenges faced throughout the project**
+
 During the project, I had encountered many challenges from becoming famlilar with a new extension of python to learning new testing methods.
 
 - Flask was a web framework that was completely new to me so it was a challenge to learn from scratch, however, I had previously worked with Django which gave me an advantage in working with templates.
