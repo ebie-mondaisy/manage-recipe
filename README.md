@@ -9,7 +9,7 @@ a web app that allows users to create, update, delete and find recipes on a flas
 5. [Risk Assessment](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#risk-assessment)
 6. [Testing](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#testing)
 7. [The manage-recipe app](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#the-manage-recipe-app)
-8. [CICD Pipeline](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#cicd-pipeline)
+8. [The CI Pipeline](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#cicd-pipeline)
 9. [Challenges and Known Issues](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#challenges-and-known-issues)
 10. [Final Notes](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#final-notes)
 
