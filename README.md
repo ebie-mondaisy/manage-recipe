@@ -9,7 +9,7 @@ a web app that allows users to create, update, delete and find recipes on a flas
 5. [Risk Assessment](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#risk-assessment)
 6. [Testing](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#testing)
 7. [The manage-recipe app](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#the-manage-recipe-app)
-8. [The CI Pipeline](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#cicd-pipeline)
+8. [The CI CD Pipeline](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#the-ci-cd-pipeline)
 9. [Challenges and Known Issues](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#challenges-and-known-issues)
 10. [Final Notes](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#final-notes)
 
@@ -102,6 +102,7 @@ The first stages of testing were conducted using pytest. The version control sys
 
 **Jenkins Testing**
 
+Providing that the test results were successful, I imported my application to Jenkins to carry out testing on a CI Server. With a webhook to my git repository, I had ran builds in Jenkins to carry out tests automatically. With automated testing, I was able to make any needed changes to the application while relying on Jenkins to test for me after pushing to GitHub.
 
 [Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
 
@@ -131,14 +132,50 @@ To add notes to a recipe, a user would have to click on the notes tab next to th
 
 [Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
 
-## The CI Pipeline
+## The CI CD Pipeline
+
+Within my CI CD pipeline, I ahve depicted the steps that need to be performed to deliver the software I have created. The source code was created using a chosen IDE and the source code was pulled and pushed to a version control system. Github was my choice of version control and after completing unit testing, the code was pulled to a CI server for testing. Jenkins was my chosen CI server and build reports were sent to my email if anything had succeed or failed and needed fixing. With the webhook, any changes to the repository were automatically sent to Jenkins so it could create builds for testing. For deployment, Jenkins was used to place the application to a deployment vm via an ssh connection.
+
+Thw following diagram shows the process needed to deliver the application that I have created. 
+
+(Insert diagram here)
 
 [Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
 
 ## Challenges and Known Issues
 
+**Known issues with the project**
+Throughout the project, I had face many functional issues and removed elements that I deemed unnecessary. I will outline some of the problems that the application currently has that could be prospects for future development.
+
+- The application allows users to create cuisines, however, they cannot be updated or deleted. This is due to a focus being put on other elements of the application along with wanting the cuisines to only be accessed by admins.
+- When updating recipes, the user is currently unable to change the cuisine. This was due to some errors that were being cause by attempting to change the cuisine.
+- The search function within the application will display the result that is closely matched to what is typed in the search bar. For example, if the database contains cheese souffle and cheese toastie, the user would have to be specific with what they want to find.
+
+**Challenges faced throughout the project**
+During the project, I had encountered many challenges from becoming famlilar with a new extension of python to learning new testing methods.
+
+- Flask was a web framework that was completely new to me so it was a challenge to learn from scratch, however, I had previously worked with Django which gave me an advantage in working with templates.
+- With my experience in project management, I have always made my own development plans using a word document. This meant that the use of trello was new to me and also a challenge in terms of knowing how to organise tasks suitably.
+- It was difficult to stick to the original plan I had for making the application as I decided to add elements and also develop the system in a different order than the one on the trello board.
+- Unit testing is a new concept to me as I have only tested in Java. Therefore, utilising pytest was a nice challenge for me and I will be able to use it confidently in the future.
+- Prior to my training, I was not familiar with Jenkins, this meant that it was a good challenge to work with Jenkins and learn another new form of testing by weebhooking to my github repository to automatically test new pushes.
+
+Overall, I have learnt new things about python outside of Django and Machine Learning and this has enabled me to gain new skills for future projects.
+
 [Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
 
 ## Final Notes
+
+**Future Work**
+
+I believe the future of this project would be an application that has resolved the known issues detailed in section 9 and to add extra funcionailty to increase the possiblity of it being released to a wider user base.
+I would like to attempt to make a many to many relationship database that can be interacted with using forms and I could create an app that incorporates recipes having many ingredients and ingredients having many recipes.
+It would also be ideal to make the application more aesthetically pleasing and add a user fucntion that allows each individual user to have their own library of recipes.
+
+**Conclusion and Reflections**
+
+I am very pleased with the outcome of this project as I have been able to explore new concepts and methods to create a flask web application. The project has opened my eyes to elements of python that i din't know and now I will be able to use this knowledge to develop better pieces of software for large companies. I am grateful for the help I have recieved throughout this project and I am proud of what I have been able to accomplish.
+
+When I reflect on the project, I believe that I can make an application of a better standard by attending to issues and adding better features, providing that I have more time. I would also ensure that I make better use of my time and dedicate my focus to areas that need it more than others.
 
 [Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
