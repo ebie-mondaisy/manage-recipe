@@ -131,7 +131,7 @@ To add notes to a recipe, a user would have to click on the notes tab next to th
 
 [Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
 
-## CICD Pipeline
+## The CI Pipeline
 
 [Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
 
