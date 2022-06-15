@@ -2,16 +2,16 @@
 a web app that allows users to create, update, delete and find recipes on a flask web app
 
 ## Table of Contents
-1. [Introduction](https://github.com/ebie-mondaisy/manage-recipe/edit/dev/README.md#an-introduction-to-the-project)
-2. [Project Planning and Management](https://github.com/ebie-mondaisy/manage-recipe/edit/dev/README.md#project-planning-and-management)
-3. [Database Design](https://github.com/ebie-mondaisy/manage-recipe/edit/dev/README.md#database-design)
-4. [User Stories and Use Cases](https://github.com/ebie-mondaisy/manage-recipe/edit/dev/README.md#user-stories-and-use-cases)
-5. [Risk Assessment](https://github.com/ebie-mondaisy/manage-recipe/edit/dev/README.md#risk-assessment)
-6. [Testing](https://github.com/ebie-mondaisy/manage-recipe/edit/dev/README.md#testing)
-7. [The manage-recipe app](https://github.com/ebie-mondaisy/manage-recipe/edit/dev/README.md#the-manage-recipe-app)
-8. [CICD Pipeline](https://github.com/ebie-mondaisy/manage-recipe/edit/dev/README.md#cicd-pipeline)
-9. [Challenges and Known Issues](https://github.com/ebie-mondaisy/manage-recipe/edit/dev/README.md#challenges-and-known-issues)
-10. [Final Notes](https://github.com/ebie-mondaisy/manage-recipe/edit/dev/README.md#final-notes)
+1. [Introduction](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#an-introduction-to-the-project)
+2. [Project Planning and Management](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#project-planning-and-management)
+3. [Database Design](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#database-design)
+4. [User Stories and Use Cases](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#user-stories-and-use-cases)
+5. [Risk Assessment](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#risk-assessment)
+6. [Testing](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#testing)
+7. [The manage-recipe app](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#the-manage-recipe-app)
+8. [CICD Pipeline](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#cicd-pipeline)
+9. [Challenges and Known Issues](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#challenges-and-known-issues)
+10. [Final Notes](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#final-notes)
 
 ## An Introduction to the Project
 
