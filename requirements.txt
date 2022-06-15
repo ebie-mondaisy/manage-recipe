@@ -5,3 +5,5 @@ flask_testing
 pytest
 pytest-cov
 wtforms
+pymysql
+gunicorn
