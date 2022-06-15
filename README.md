@@ -19,7 +19,7 @@ This is an individual project that is aimed to demonstrate learning of Python, G
 The app created for the project must have CRUD functionality and a relational database with two relating tables. 
 To demonstrate an understanding of Project Management, a kanban board should be used to show that there was a sufficient amount of planning made.
 The app must utilise Flask to create a functioning front-end website, a CI server for it to be built and a cloud-based virtual machine for the app to be deployed.
-For integration into a Version Control system, Git has been chosen with a feature-branch model for development.
+For integration into a Version Control system, GitHub has been chosen with a feature-branch model for development.
 
 For this project, I have made sure that I am able to meet all requirments of the specification and to support this, I have produced the following documentation to display my work. The final product is a recipe library that allows the user to add, view, update, delete and search for recipes. In addition to this, the user can add notes to each recipe after they have cooked them to keep track of culinary skill progress.
 
@@ -93,11 +93,11 @@ When creating a project, there will be risks involved and this means taht they n
 
 ## Testing
 
-To ensure that an app is able to fit its purpose and CRUD functionality, testing should be conducted. In this project I utilised Git and Jenkins to ensure that my application functioned as it should. If I was to deploy the application for wider use, I would test the securtiy of the application, however, that is not currently needed.
+To ensure that an app is able to fit its purpose and CRUD functionality, testing should be conducted. In this project I utilised Version Control Software and Jenkins to ensure that my application functioned as it should. If I was to deploy the application for wider use, I would test the securtiy of the application, however, that is not currently needed.
 
 **Unit Testing - Pytest**
 
-The first stages of testing were conducted using pytest. The version control system I used was Git and this enabled me to test specific functions of the application to ensure that they did what they were intended to do. I used pytest to evaulate each feature of the flask app while trying my best to get the highest coverage percentage.
+The first stages of testing were conducted using pytest. The version control system I used enabled me to test specific functions of the application to ensure that they did what they were intended to do. I used pytest to evaulate each feature of the flask app while trying my best to get the highest coverage percentage.
 (Include images of the testing and coverage. Explain what the testing means)
 
 **Jenkins Testing**
