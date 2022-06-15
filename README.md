@@ -93,9 +93,10 @@ When creating a project, there will be risks involved and this means taht they n
 
 ## Testing
 
-To ensure that an app is able to fit its purpose and CRUD functionality, testing should be conducted. In this project I utilised Git and Jenkins to ensure that my application functioned as it should. If I was to deploy the application for wider use, I would test the securtiy of the application, hoever, that is not currently needed.
+To ensure that an app is able to fit its purpose and CRUD functionality, testing should be conducted. In this project I utilised Git and Jenkins to ensure that my application functioned as it should. If I was to deploy the application for wider use, I would test the securtiy of the application, however, that is not currently needed.
 
 **Unit Testing - Pytest**
+
 The first stages of testing were conducted using pytest. The version control system I used was Git and this enabled me to test specific functions of the application to ensure that they did what they were intended to do. I used pytest to evaulate each feature of the flask app while trying my best to get the highest coverage percentage.
 (Include images of the testing and coverage. Explain what the testing means)
 
