@@ -2,16 +2,16 @@
 a web app that allows users to create, update, delete and find recipes on a flask web app
 
 ## Table of Contents
-1. [Introduction](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#an-introduction-to-the-project)
-2. [Project Planning and Management](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#project-planning-and-management)
-3. [Database Design](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#database-design)
-4. [User Stories and Use Cases](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#user-stories-and-use-cases)
-5. [Risk Assessment](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#risk-assessment)
-6. [Testing](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#testing)
-7. [The manage-recipe app](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#the-manage-recipe-app)
-8. [CICD Pipeline](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#cicd-pipeline)
-9. [Challenges and Known Issues](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#challenges-and-known-issues)
-10. [Final Notes](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#final-notes)
+1. [Introduction](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#an-introduction-to-the-project)
+2. [Project Planning and Management](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#project-planning-and-management)
+3. [Database Design](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#database-design)
+4. [User Stories and Use Cases](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#user-stories-and-use-cases)
+5. [Risk Assessment](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#risk-assessment)
+6. [Testing](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#testing)
+7. [The manage-recipe app](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#the-manage-recipe-app)
+8. [CICD Pipeline](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#cicd-pipeline)
+9. [Challenges and Known Issues](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#challenges-and-known-issues)
+10. [Final Notes](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#final-notes)
 
 ## An Introduction to the Project
 
@@ -23,7 +23,7 @@ For integration into a Version Control system, Git has been chosen with a featur
 
 For this project, I have made sure that I am able to meet all requirments of the specification and to support this, I have produced the following documentation to display my work. The final product is a recipe library that allows the user to add, view, update, delete and search for recipes. In addition to this, the user can add notes to each recipe after they have cooked them to keep track of culinary skill progress.
 
-[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#table-of-contents)
+[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
 
 ## Project Planning and Management
 
@@ -41,7 +41,7 @@ To give some direction for the project, I produced a trello board that helped me
 
 <img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/kanban3.jpg" width="900" height="500"/>
 
-[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#table-of-contents)
+[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
 
 ## Database Design
 
@@ -63,7 +63,7 @@ Further developments were made and a final ERD diagram had been prodcuced. This 
 - The Recipe table has a one to many relationship with the Notes table as each recipe can have multiple notes. The user can add as many notes as they would like to the recipe and each recipe will have its own notes.
 - As a whole, the user can create cuisines and recipes to add to the database, update added recipes, delete recipes and notes, view recipes and notes and search for recipes by their name.
 
-[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#table-of-contents)
+[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
 
 ## User Stories and Use Cases
 
@@ -81,7 +81,7 @@ When creating a flask web app, users are important to consider as they will be u
 ###### A user that soley enjoys cooking at home
 <img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/user-work.jpg"  width="900" height="500"/>
 
-[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#table-of-contents)
+[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
 
 ## Risk Assessment
 
@@ -89,7 +89,7 @@ When creating a project, there will be risks involved and this means taht they n
 
 (Insert risk asessment here)
 
-[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#table-of-contents)
+[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
 
 ## Testing
 
@@ -103,7 +103,7 @@ The first stages of testing were conducted using pytest. The version control sys
 **Jenkins Testing**
 
 
-[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#table-of-contents)
+[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
 
 ## The manage-recipe app
 
@@ -129,16 +129,16 @@ To edit a recipe, a user would need to click on a recipe's "View" button to get 
 To add notes to a recipe, a user would have to click on the notes tab next to the update tab. A user is able to add as many notes as they would like and they also have the option to delete notest that they no longer want. The notes will always sit at the bottom of the update page. This leaves room for the user to tailor a recipe while potentially leaving notes explaining why they have made changes.
 <img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/notes-recipe.jpg" width="900" height="500"/>
 
-[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#table-of-contents)
+[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
 
 ## CICD Pipeline
 
-[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#table-of-contents)
+[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
 
 ## Challenges and Known Issues
 
-[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#table-of-contents)
+[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
 
 ## Final Notes
 
-[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/blob/dev/README.md#table-of-contents)
+[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
