@@ -98,7 +98,14 @@ To ensure that an app is able to fit its purpose and CRUD functionality, testing
 **Unit Testing - Pytest**
 
 The first stages of testing were conducted using pytest. The version control system I used enabled me to test specific functions of the application to ensure that they did what they were intended to do. I used pytest to evaulate each feature of the flask app while trying my best to get the highest coverage percentage.
-(Include images of the testing and coverage. Explain what the testing means)
+
+<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/normal%20testing.jpg" width="500" height="210">
+
+My final result of unit testing was 89% and this meant that I had covered most lines of code with some uncovered. The testing allowed me to see that my routes were functioning properly and that made my application more deployable. Unfortunately, the remaining 11% was not covered due to time constraints and not being able to work around why nothing was being picked up. However, I had a play with the code and found that I could get more coverage if I included ```if request.method == "POST":``` in each statement. The following image shows coverage if I use this statement before allowing the user to update a recipe:
+
+<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/when%20specifying%20post%20request.jpg" width="500" height="210">
+
+With more time and a better understanding of pytest, I could get more coverage and ensure that I separate my code properly so I can test each route by itself.
 
 **Jenkins Testing**
 
