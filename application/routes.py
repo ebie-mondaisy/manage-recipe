@@ -111,8 +111,6 @@ def edit_recipe(id):
 
 @app.route("/home/edit/track/<int:id>", methods = ["POST"])
 def delete_track(id):
-    #track_delete = trackCook.query.get_or_404(request.form['recipe_id'])
     db.session.delete(trackCook.query.get(id))
     db.session.commit()
-    flash('Note deleted :)', 'success')
-    return redirect(url_for('home'))
+    return jsonify({"result" : "success"})

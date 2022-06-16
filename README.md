@@ -154,6 +154,7 @@ Throughout the project, I had face many functional issues and removed elements t
 - The application allows users to create cuisines, however, they cannot be updated or deleted. This is due to a focus being put on other elements of the application along with wanting the cuisines to only be accessed by admins.
 - When updating recipes, the user is currently unable to change the cuisine. This was due to some errors that were being cause by attempting to change the cuisine.
 - The search function within the application will display the result that is closely matched to what is typed in the search bar. For example, if the database contains cheese souffle and cheese toastie, the user would have to be specific with what they want to find.
+- Due to time constraints, I was not able to get the user to be redirected to the edit page after deleting a note. They are taken to another page which confirms success and the user then has to click the back button on their browser.
 
 **Challenges faced throughout the project**
 

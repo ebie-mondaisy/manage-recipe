@@ -99,7 +99,7 @@ class TestDeleteRecipe(TestBase):
 class TestDeleteNote(TestBase):
     def test_deleteNote(self):
         response = self.client.post(url_for('delete_track', id=1), data=dict(track_ID=1))
-        assert response.status_code == 302
+        assert response.status_code == 200
 
 #testing the search functionality of the application
 class TestSearchRecipe(TestBase):
