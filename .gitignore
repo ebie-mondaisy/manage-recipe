@@ -4,4 +4,4 @@ htmlcov/
 .coverage
 *.db
 chromedriver
-genv
+genv/
