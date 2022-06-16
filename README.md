@@ -104,6 +104,8 @@ The first stages of testing were conducted using pytest. The version control sys
 
 Providing that the test results were successful, I imported my application to Jenkins to carry out testing on a CI Server. With a webhook to my git repository, I had ran builds in Jenkins to carry out tests automatically. With automated testing, I was able to make any needed changes to the application while relying on Jenkins to test for me after pushing to GitHub.
 
+(provide link to build script for context)
+
 [Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
 
 ## The manage-recipe app
@@ -148,6 +150,7 @@ Thw following diagram shows the process needed to deliver the application that I
 
 Throughout the project, I had face many functional issues and removed elements that I deemed unnecessary. I will outline some of the problems that the application currently has that could be prospects for future development.
 
+- Unfortunately, I had forgotten to add my ```.gitignore``` file to the beginning of my project. This has been corrected and there has been no leak of sensitive information. The only change that has been made is the deletion of unnecessary files from the repository.
 - The application allows users to create cuisines, however, they cannot be updated or deleted. This is due to a focus being put on other elements of the application along with wanting the cuisines to only be accessed by admins.
 - When updating recipes, the user is currently unable to change the cuisine. This was due to some errors that were being cause by attempting to change the cuisine.
 - The search function within the application will display the result that is closely matched to what is typed in the search bar. For example, if the database contains cheese souffle and cheese toastie, the user would have to be specific with what they want to find.
