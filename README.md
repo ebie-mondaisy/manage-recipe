@@ -87,7 +87,7 @@ When creating a flask web app, users are important to consider as they will be u
 
 When creating a project, there will be risks involved and this means taht they need to be evaluated to see how greatly they would impact the proceedings of the project. I have created a risk asessment table that a produces a score for the severity of risks and what actions need to be taken to avoid them or resolve them if they should occur.
 
-(Insert risk asessment here)
+<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/risk-assessment.jpg"  width="900" height="500"/>
 
 [Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
 
@@ -140,7 +140,7 @@ Within my CI CD pipeline, I ahve depicted the steps that need to be performed to
 
 Thw following diagram shows the process needed to deliver the application that I have created. 
 
-(Insert diagram here)
+<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/CI%20CD%20Pipeline.jpg" width="900" height="500"/>
 
 [Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
 

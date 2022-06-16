@@ -22,11 +22,13 @@ def create():
         form.cuisName.choices.append(
             (cuisine.id, f"{cuisine.cuisName}")
         )
+    
 
-    if form.validate_on_submit():
-        
+    if request.method == "POST":
+
+        print(form.cuisName.data)
         recipe = makeRecipe(recipeName = form.recipeName.data, creatorName = form.creatorName.data,
-                            cuisine = cuisine , description = form.description.data, 
+                            CuisID = form.cuisName.data , description = form.description.data, 
                             ingredients = form.ingredients.data, 
                             instructions = form.instructions.data, 
                             calories = form.calories.data, difficulty = form.difficulty.data)
@@ -80,10 +82,10 @@ def edit_recipe(id):
     form_update =  UpdateRecipe(obj = look_recipe)
     add_track = RecipeTrack()
 
-    if form_update.update.data and form_update.validate_on_submit():
+    if  form_update.update.data: #and form_update.validate_on_submit():
         look_recipe.recipeName = form_update.recipeName.data
         look_recipe.creatorName = form_update.creatorName.data
-        look_recipe.decription = form_update.description.data
+        look_recipe.description = form_update.description.data
         look_recipe.ingredients = form_update.ingredients.data
         look_recipe.instructions = form_update.instructions.data
         look_recipe.calories = form_update.calories.data
@@ -107,9 +109,10 @@ def edit_recipe(id):
     return render_template("edit.html", title = "Edit Recipe!", recipe = look_recipe, recipe_notes = look_notes,
                                     form_update = form_update, add_track = add_track)
 
-@app.route("/home/edit/track", methods = ["POST"])
-def delete_track():
-    track_delete = trackCook.query.get_or_404(request.form['track_ID'])
-    db.session.delete(track_delete)
+@app.route("/home/edit/track/<int:id>", methods = ["POST"])
+def delete_track(id):
+    #track_delete = trackCook.query.get_or_404(request.form['recipe_id'])
+    db.session.delete(trackCook.query.get(id))
     db.session.commit()
-    return jsonify({"result" : "success"})
+    flash('Note deleted :)', 'success')
+    return redirect(url_for('home'))

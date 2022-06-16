@@ -40,9 +40,6 @@
                                 <b>{{ form_update.creatorName.label }}</b> {{ form_update.creatorName}}
                             </div>
                             <div class="form-group">
-                                <b>Cuisine Name:</b> {{ form_update.cuisName}}
-                            </div>
-                            <div class="form-group">
                                 <b>{{ form_update.description.label }}</b> {{ form_update.description}}
                             </div>
                             <div class="form-group">
@@ -94,7 +91,9 @@
               <p class="card-text"><b>Recipe Notes</b>: {{ track.notes }}</p>
               <p class="card-text"><small class="test-muted">{{ track.madeDate }}</small></p>
           </div>
-          <button class="track-delete-btn btn-dark deleteTrack" track_id = "{{ track.id }}">Delete</button>
+          <form action="/home/edit/track/{{ track.id }}" method="POST">
+            <button class="button">Delete</button>
+          </form>
       </div>
     {% endfor %}
   </div>

@@ -26,4 +26,4 @@ class trackCook(db.Model):
     success = db.Column(db.String(30), nullable=False)
     enjoyRate = db.Column(db.Integer, nullable=False)
     notes = db.Column(db.String(600), unique=False)
-    recipe_id = db.Column(db.Integer, db.ForeignKey("make_recipe.id"), nullable=False)
+    recipe_id = db.Column(db.Integer, db.ForeignKey("make_recipe.id"))
