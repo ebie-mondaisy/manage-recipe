@@ -111,7 +111,7 @@ With more time and a better understanding of pytest, I could get more coverage a
 
 Providing that the test results were successful, I imported my application to Jenkins to carry out testing on a CI Server. With a webhook to my git repository, I had ran builds in Jenkins to carry out tests automatically. With automated testing, I was able to make any needed changes to the application while relying on Jenkins to test for me after pushing to GitHub.
 
-(provide link to build script for context)
+After creating a build, I was able to run a test that ran my app and completed unit testing. The build was successful and I was able to see which elements of my application were functioning. You can view the build [here](https://github.com/ebie-mondaisy/manage-recipe/blob/main/image-source/jenkinsbuild2.txt)
 
 [Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/main#table-of-contents)
 
@@ -148,6 +148,8 @@ Within my CI CD pipeline, I ahve depicted the steps that need to be performed to
 Thw following diagram shows the process needed to deliver the application that I have created. 
 
 <img src="https://github.com/ebie-mondaisy/manage-recipe/blob/main/image-source/CI%20CD%20Pipeline.jpg" width="900" height="500"/>
+
+With jenkins, I was able to start a continuous build that would run my app and when testing this build, my app was very responsive and worked as it should. [Here](https://github.com/ebie-mondaisy/manage-recipe/blob/main/image-source/jenkinsbuild2.txt) is the build script for this continuous run.
 
 [Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/main#table-of-contents)
 
