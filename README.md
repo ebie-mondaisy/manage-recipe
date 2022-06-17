@@ -2,16 +2,16 @@
 a web app that allows users to create, update, delete and find recipes on a flask web app
 
 ## Table of Contents
-1. [Introduction](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#an-introduction-to-the-project)
-2. [Project Planning and Management](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#project-planning-and-management)
-3. [Database Design](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#database-design)
-4. [User Stories and Use Cases](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#user-stories-and-use-cases)
-5. [Risk Assessment](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#risk-assessment)
-6. [Testing](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#testing)
-7. [The manage-recipe app](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#the-manage-recipe-app)
-8. [The CI CD Pipeline](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#the-ci-cd-pipeline)
-9. [Challenges and Known Issues](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#challenges-and-known-issues)
-10. [Final Notes](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#final-notes)
+1. [Introduction](https://github.com/ebie-mondaisy/manage-recipe/tree/main#an-introduction-to-the-project)
+2. [Project Planning and Management](https://github.com/ebie-mondaisy/manage-recipe/tree/main#project-planning-and-management)
+3. [Database Design](https://github.com/ebie-mondaisy/manage-recipe/tree/main#database-design)
+4. [User Stories and Use Cases](https://github.com/ebie-mondaisy/manage-recipe/tree/main#user-stories-and-use-cases)
+5. [Risk Assessment](https://github.com/ebie-mondaisy/manage-recipe/tree/main#risk-assessment)
+6. [Testing](https://github.com/ebie-mondaisy/manage-recipe/tree/main#testing)
+7. [The manage-recipe app](https://github.com/ebie-mondaisy/manage-recipe/tree/main#the-manage-recipe-app)
+8. [The CI CD Pipeline](https://github.com/ebie-mondaisy/manage-recipe/tree/main#the-ci-cd-pipeline)
+9. [Challenges and Known Issues](https://github.com/ebie-mondaisy/manage-recipe/tree/main#challenges-and-known-issues)
+10. [Final Notes](https://github.com/ebie-mondaisy/manage-recipe/tree/main#final-notes)
 
 ## An Introduction to the Project
 
@@ -23,7 +23,7 @@ For integration into a Version Control system, GitHub has been chosen with a fea
 
 For this project, I have made sure that I am able to meet all requirments of the specification and to support this, I have produced the following documentation to display my work. The final product is a recipe library that allows the user to add, view, update, delete and search for recipes. In addition to this, the user can add notes to each recipe after they have cooked them to keep track of culinary skill progress.
 
-[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
+[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/main#table-of-contents)
 
 ## Project Planning and Management
 
@@ -31,31 +31,31 @@ To give some direction for the project, I produced a trello board that helped me
 
 ###### Start of the Project
 
-<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/kanban1.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/main/image-source/kanban1.jpg" width="900" height="500"/>
 
 ###### During the Project
 
-<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/kanban2.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/main/image-source/kanban2.jpg" width="900" height="500"/>
 
 ###### Last part of the project
 
-<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/kanban3.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/main/image-source/kanban3.jpg" width="900" height="500"/>
 
-[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
+[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/main#table-of-contents)
 
 ## Database Design
 
 The initial vision for the database was to create a table of cuisines that can link to the recipes table and provide drop down options when creating a recipe. To add an extra function to the recipe library, I planned to create a table that stores notes for each recipe.
 
-<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/erd1.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/main/image-source/erd1.jpg" width="900" height="500"/>
 
 After drawing my intial ERD diagram, I moved onto creating one with my chosen software, Star UML. This diagram is what I had intially planned for the database.
 
-<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/erd2.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/main/image-source/erd2.jpg" width="900" height="500"/>
 
 Further developments were made and a final ERD diagram had been prodcuced. This diagram is true to the models created in the flask app.
 
-<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/erd3.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/main/image-source/erd3.jpg" width="900" height="500"/>
 
 **Explaining the Database Relationships**
 
@@ -63,33 +63,33 @@ Further developments were made and a final ERD diagram had been prodcuced. This 
 - The Recipe table has a one to many relationship with the Notes table as each recipe can have multiple notes. The user can add as many notes as they would like to the recipe and each recipe will have its own notes.
 - As a whole, the user can create cuisines and recipes to add to the database, update added recipes, delete recipes and notes, view recipes and notes and search for recipes by their name.
 
-[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
+[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/main#table-of-contents)
 
 ## User Stories and Use Cases
 
 When creating a flask web app, users are important to consider as they will be using the app and they will want to it to function in the way that they desire. I have created users stories with use cases to demonstrate what users will want from the app and how they would ideally use it. I have created 4 user stories with thier own use cases.
 
 ###### A user that is currently on a diet
-<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/uesr-diet.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/main/image-source/uesr-diet.jpg" width="900" height="500"/>
 
 ###### A user that has to prepare meals for their children
-<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/user-parent.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/main/image-source/user-parent.jpg" width="900" height="500"/>
 
 ###### A user that is a chef wanting to be innovative with recipes
-<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/user-chef.jpg"  width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/main/image-source/user-chef.jpg"  width="900" height="500"/>
 
 ###### A user that soley enjoys cooking at home
-<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/user-work.jpg"  width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/main/image-source/user-work.jpg"  width="900" height="500"/>
 
-[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
+[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/main#table-of-contents)
 
 ## Risk Assessment
 
 When creating a project, there will be risks involved and this means taht they need to be evaluated to see how greatly they would impact the proceedings of the project. I have created a risk asessment table that a produces a score for the severity of risks and what actions need to be taken to avoid them or resolve them if they should occur.
 
-<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/risk-assessment.jpg"  width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/main/image-source/risk-assessment.jpg"  width="900" height="500"/>
 
-[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
+[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/main#table-of-contents)
 
 ## Testing
 
@@ -99,11 +99,11 @@ To ensure that an app is able to fit its purpose and CRUD functionality, testing
 
 The first stages of testing were conducted using pytest. The version control system I used enabled me to test specific functions of the application to ensure that they did what they were intended to do. I used pytest to evaulate each feature of the flask app while trying my best to get the highest coverage percentage.
 
-<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/normal%20testing.jpg" width="500" height="210">
+<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/main/image-source/normal%20testing.jpg" width="500" height="210">
 
 My final result of unit testing was 89% and this meant that I had covered most lines of code with some uncovered. The testing allowed me to see that my routes were functioning properly and that made my application more deployable. Unfortunately, the remaining 11% was not covered due to time constraints and not being able to work around why nothing was being picked up. Within one of the routes, I was not able to reach the second if statement and I had difficulties with trying to find a suitable resolve without breaking the function. However, I had a play with the code and found that I could get more coverage if I included ```if request.method == "POST":``` in each statement. The following image shows coverage if I use this statement before allowing the user to update a recipe:
 
-<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/when%20specifying%20post%20request.jpg" width="500" height="210">
+<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/main/image-source/when%20specifying%20post%20request.jpg" width="500" height="210">
 
 With more time and a better understanding of pytest, I could get more coverage and ensure that I separate my code properly so I can test each route by itself.
 
@@ -113,7 +113,7 @@ Providing that the test results were successful, I imported my application to Je
 
 (provide link to build script for context)
 
-[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
+[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/main#table-of-contents)
 
 ## The manage-recipe app
 
@@ -121,25 +121,25 @@ The app I have produced is a site that allows users to add recipes to a database
 
 **The home page**
 The home page allows the user to view the recipies that are in the database along with being able to update and delete each recipe. The navigation bar shows links to other pages on the site and there is a search bar that allows the user to go to a recipe's update menu after searching for it by name.
-<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/recipe-home-view.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/main/image-source/recipe-home-view.jpg" width="900" height="500"/>
 
 **Adding a cuisine**
 In order to add a cusine to the database, the user will have to visit the cusisine portal via the navigation bar. This page allows the user to add a new cuisine and view all the cuisines that are currently in the database. When a cuisine has been added, a flash message pops up to confirm that the addition was successful.
-<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/add-cuisine.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/main/image-source/add-cuisine.jpg" width="900" height="500"/>
 
 **Creating a recipe**
 To create a recipe, the user will have to navigate to this page via the navigation bar. On this page, a user can add a recipe to the database and the cuisine drop down menu is linked to the cuisines table. When a recipe has been created, the web page will flash a confirmation message so the user knows that the addition has been successful.
-<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/create-recipe.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/main/image-source/create-recipe.jpg" width="900" height="500"/>
 
 **Editing a Recipe**
 To edit a recipe, a user would need to click on a recipe's "View" button to get to the right page. On this page, the user is able to change details of a recipe and change the information that is in the database after submitting. The update page has two tabs: one to change recipe details and one to add notes.
-<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/edit-recipe.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/main/image-source/edit-recipe.jpg" width="900" height="500"/>
 
 **Adding notes to a recipe**
 To add notes to a recipe, a user would have to click on the notes tab next to the update tab. A user is able to add as many notes as they would like and they also have the option to delete notest that they no longer want. The notes will always sit at the bottom of the update page. This leaves room for the user to tailor a recipe while potentially leaving notes explaining why they have made changes.
-<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/notes-recipe.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/main/image-source/notes-recipe.jpg" width="900" height="500"/>
 
-[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
+[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/main#table-of-contents)
 
 ## The CI CD Pipeline
 
@@ -147,9 +147,9 @@ Within my CI CD pipeline, I ahve depicted the steps that need to be performed to
 
 Thw following diagram shows the process needed to deliver the application that I have created. 
 
-<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/CI%20CD%20Pipeline.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/manage-recipe/blob/main/image-source/CI%20CD%20Pipeline.jpg" width="900" height="500"/>
 
-[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
+[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/main#table-of-contents)
 
 ## Challenges and Known Issues
 
@@ -175,7 +175,7 @@ During the project, I had encountered many challenges from becoming famlilar wit
 
 Overall, I have learnt new things about python outside of Django and Machine Learning and this has enabled me to gain new skills for future projects.
 
-[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
+[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/main#table-of-contents)
 
 ## Final Notes
 
@@ -191,4 +191,4 @@ I am very pleased with the outcome of this project as I have been able to explor
 
 When I reflect on the project, I believe that I can make an application of a better standard by attending to issues and adding better features, providing that I have more time. I would also ensure that I make better use of my time and dedicate my focus to areas that need it more than others.
 
-[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/dev#table-of-contents)
+[Back to table of contents](https://github.com/ebie-mondaisy/manage-recipe/tree/main#table-of-contents)
