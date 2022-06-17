@@ -1,0 +1,120 @@
+Started by user BlueEyesDragon
+Running as SYSTEM
+Building in workspace /home/jenkins/.jenkins/workspace/manage-recipe
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/ebie-mondaisy/manage-recipe.git
+ > git init /home/jenkins/.jenkins/workspace/manage-recipe # timeout=10
+Fetching upstream changes from https://github.com/ebie-mondaisy/manage-recipe.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/ebie-mondaisy/manage-recipe.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/ebie-mondaisy/manage-recipe.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 3ba2df59031db1c73dcbe5e6901d8eab463d681d (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3ba2df59031db1c73dcbe5e6901d8eab463d681d # timeout=10
+Commit message: "EM: made some changes to the readme"
+ > git rev-list --no-walk 3ba2df59031db1c73dcbe5e6901d8eab463d681d # timeout=10
+[manage-recipe] $ /bin/bash /tmp/jenkins6923270798671531493.sh
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Collecting flask
+  Using cached Flask-2.1.2-py3-none-any.whl (95 kB)
+Collecting flask_sqlalchemy
+  Using cached Flask_SQLAlchemy-2.5.1-py2.py3-none-any.whl (17 kB)
+Collecting flask_wtf
+  Using cached Flask_WTF-1.0.1-py3-none-any.whl (12 kB)
+Collecting flask_testing
+  Using cached Flask-Testing-0.8.1.tar.gz (45 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting pytest
+  Using cached pytest-7.1.2-py3-none-any.whl (297 kB)
+Collecting pytest-cov
+  Using cached pytest_cov-3.0.0-py3-none-any.whl (20 kB)
+Collecting wtforms
+  Using cached WTForms-3.0.1-py3-none-any.whl (136 kB)
+Collecting pymysql
+  Using cached PyMySQL-1.0.2-py3-none-any.whl (43 kB)
+Collecting gunicorn
+  Using cached gunicorn-20.1.0-py3-none-any.whl (79 kB)
+Collecting Jinja2>=3.0
+  Using cached Jinja2-3.1.2-py3-none-any.whl (133 kB)
+Collecting Werkzeug>=2.0
+  Using cached Werkzeug-2.1.2-py3-none-any.whl (224 kB)
+Collecting click>=8.0
+  Using cached click-8.1.3-py3-none-any.whl (96 kB)
+Collecting itsdangerous>=2.0
+  Using cached itsdangerous-2.1.2-py3-none-any.whl (15 kB)
+Collecting SQLAlchemy>=0.8.0
+  Using cached SQLAlchemy-1.4.37-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.6 MB)
+Collecting py>=1.8.2
+  Using cached py-1.11.0-py2.py3-none-any.whl (98 kB)
+Collecting attrs>=19.2.0
+  Using cached attrs-21.4.0-py2.py3-none-any.whl (60 kB)
+Collecting iniconfig
+  Using cached iniconfig-1.1.1-py2.py3-none-any.whl (5.0 kB)
+Collecting packaging
+  Using cached packaging-21.3-py3-none-any.whl (40 kB)
+Collecting tomli>=1.0.0
+  Using cached tomli-2.0.1-py3-none-any.whl (12 kB)
+Collecting pluggy<2.0,>=0.12
+  Using cached pluggy-1.0.0-py2.py3-none-any.whl (13 kB)
+Collecting coverage[toml]>=5.2.1
+  Using cached coverage-6.4.1-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (212 kB)
+Collecting MarkupSafe
+  Using cached MarkupSafe-2.1.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25 kB)
+Requirement already satisfied: setuptools>=3.0 in ./genv/lib/python3.10/site-packages (from gunicorn->-r requirements.txt (line 9)) (59.6.0)
+Collecting greenlet!=0.4.17
+  Using cached greenlet-1.1.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (155 kB)
+Collecting pyparsing!=3.0.5,>=2.0.2
+  Using cached pyparsing-3.0.9-py3-none-any.whl (98 kB)
+Using legacy 'setup.py install' for flask_testing, since package 'wheel' is not installed.
+Installing collected packages: iniconfig, Werkzeug, tomli, pyparsing, pymysql, py, pluggy, MarkupSafe, itsdangerous, gunicorn, greenlet, coverage, click, attrs, wtforms, SQLAlchemy, packaging, Jinja2, pytest, flask, pytest-cov, flask_wtf, flask_testing, flask_sqlalchemy
+  Running setup.py install for flask_testing: started
+  Running setup.py install for flask_testing: finished with status 'done'
+Successfully installed Jinja2-3.1.2 MarkupSafe-2.1.1 SQLAlchemy-1.4.37 Werkzeug-2.1.2 attrs-21.4.0 click-8.1.3 coverage-6.4.1 flask-2.1.2 flask_sqlalchemy-2.5.1 flask_testing-0.8.1 flask_wtf-1.0.1 greenlet-1.1.2 gunicorn-20.1.0 iniconfig-1.1.1 itsdangerous-2.1.2 packaging-21.3 pluggy-1.0.0 py-1.11.0 pymysql-1.0.2 pyparsing-3.0.9 pytest-7.1.2 pytest-cov-3.0.0 tomli-2.0.1 wtforms-3.0.1
+============================= test session starts ==============================
+platform linux -- Python 3.10.4, pytest-7.1.2, pluggy-1.0.0
+rootdir: /home/jenkins/.jenkins/workspace/manage-recipe
+plugins: cov-3.0.0
+collected 8 items
+
+tests/recipe_test.py ........                                            [100%]
+
+---------- coverage: platform linux, python 3.10.4-final-0 -----------
+Name                      Stmts   Miss  Cover   Missing
+-------------------------------------------------------
+application/__init__.py       9      0   100%
+application/forms.py         33      0   100%
+application/models.py        23      0   100%
+application/routes.py        82     16    80%   72, 86-95, 98-103
+tests/recipe_test.py         62      0   100%
+-------------------------------------------------------
+TOTAL                       209     16    92%
+
+
+============================== 8 passed in 1.01s ===============================
+ * Serving Flask app 'application' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.154.0.6:5000 (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 766-185-441
+Terminated
+Build was aborted
+Aborted by BlueEyesDragon
+Finished: ABORTED
