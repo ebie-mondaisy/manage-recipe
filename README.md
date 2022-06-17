@@ -101,7 +101,7 @@ The first stages of testing were conducted using pytest. The version control sys
 
 <img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/normal%20testing.jpg" width="500" height="210">
 
-My final result of unit testing was 89% and this meant that I had covered most lines of code with some uncovered. The testing allowed me to see that my routes were functioning properly and that made my application more deployable. Unfortunately, the remaining 11% was not covered due to time constraints and not being able to work around why nothing was being picked up. However, I had a play with the code and found that I could get more coverage if I included ```if request.method == "POST":``` in each statement. The following image shows coverage if I use this statement before allowing the user to update a recipe:
+My final result of unit testing was 89% and this meant that I had covered most lines of code with some uncovered. The testing allowed me to see that my routes were functioning properly and that made my application more deployable. Unfortunately, the remaining 11% was not covered due to time constraints and not being able to work around why nothing was being picked up. Within one of the routes, I was not able to reach the second if statement and I had difficulties with trying to find a suitable resolve without breaking the function. However, I had a play with the code and found that I could get more coverage if I included ```if request.method == "POST":``` in each statement. The following image shows coverage if I use this statement before allowing the user to update a recipe:
 
 <img src="https://github.com/ebie-mondaisy/manage-recipe/blob/dev/image-source/when%20specifying%20post%20request.jpg" width="500" height="210">
 
